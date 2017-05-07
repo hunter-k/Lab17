@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    <title>Rich Man's Reddit</title>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src=""></script>
+</head>
+<body ng-controller="myController">
+
+    
+
+    <ul ng-controller="myController as controller">
+    <li ng-repeat="data in controller.mydata">
+      {{ data.data.title }}
+      {{ data.data.score }} points
+      <img ng-src="{{ data.data.thumbnail }}" />
+
+    </li>
+ </ul>
+
+
+    <!-- Include angular -->
+    
+</body>
+</html>
